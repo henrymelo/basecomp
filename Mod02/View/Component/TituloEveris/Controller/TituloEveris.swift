@@ -8,11 +8,6 @@
 import Foundation
 import UIKit
 
-
-protocol TituloEverisDelegate: class {
-    func buttonAction()
-}
-
 public class TituloEveris: UIView {
     public var view: UIView!
     
@@ -36,9 +31,8 @@ public class TituloEveris: UIView {
         setupInit()
     }
     
-    init(title: String) {
+    init() {
         super.init(frame: CGRect(x: 100, y: 100, width: 100, height: 100))
-        self.titulox = "ffff"
         layoutIfNeeded()
     }
     
@@ -87,6 +81,10 @@ public class TituloEveris: UIView {
     public func setupUI(title: String) {
         self.titulox = title
         self.titulo?.text = "naum vai..."
+    }
+    
+    public func setupUI(title: TituloEverisUI) {
+        self.titulox = title.description
     }
     
     @IBAction func botaoOuTituloAction(_ sender: UIButton) {

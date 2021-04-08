@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,6 +22,8 @@
 		BB6E1201261CA83600EC5C97 /* ViewEveris.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6E1200261CA83600EC5C97 /* ViewEveris.swift */; };
 		BB6E1214261CD63C00EC5C97 /* TituloEveris.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB6E1213261CD63C00EC5C97 /* TituloEveris.xib */; };
 		BB6E1219261CD64C00EC5C97 /* TituloEveris.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6E1218261CD64C00EC5C97 /* TituloEveris.swift */; };
+		BB885ED5261FA8C900D9D8F5 /* TituloModeloUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB885ED4261FA8C900D9D8F5 /* TituloModeloUI.swift */; };
+		BB885EDE261FA97400D9D8F5 /* TituloEverisProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB885EDD261FA97400D9D8F5 /* TituloEverisProtocols.swift */; };
 		F9AC0F6D17B07D044B5C5516 /* Pods_Mod02Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11FE576945A5975E9EE040DD /* Pods_Mod02Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +72,8 @@
 		BB6E1200261CA83600EC5C97 /* ViewEveris.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewEveris.swift; sourceTree = "<group>"; };
 		BB6E1213261CD63C00EC5C97 /* TituloEveris.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TituloEveris.xib; sourceTree = "<group>"; };
 		BB6E1218261CD64C00EC5C97 /* TituloEveris.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TituloEveris.swift; sourceTree = "<group>"; };
+		BB885ED4261FA8C900D9D8F5 /* TituloModeloUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TituloModeloUI.swift; sourceTree = "<group>"; };
+		BB885EDD261FA97400D9D8F5 /* TituloEverisProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TituloEverisProtocols.swift; sourceTree = "<group>"; };
 		EFC4257C642E40282D9EBE1F /* Pods-Mod02Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mod02Tests.debug.xcconfig"; path = "Target Support Files/Pods-Mod02Tests/Pods-Mod02Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,7 +115,6 @@
 				EFC4257C642E40282D9EBE1F /* Pods-Mod02Tests.debug.xcconfig */,
 				B3122FAC7BFF84EE48AC3E1B /* Pods-Mod02Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -217,10 +220,9 @@
 		BB6E1205261CA85100EC5C97 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				BB885ED0261FA87000D9D8F5 /* TituloEveris */,
 				BB6E11FB261CA82400EC5C97 /* ViewEveris.xib */,
 				BB6E1200261CA83600EC5C97 /* ViewEveris.swift */,
-				BB6E1213261CD63C00EC5C97 /* TituloEveris.xib */,
-				BB6E1218261CD64C00EC5C97 /* TituloEveris.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -230,6 +232,49 @@
 			children = (
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		BB885ED0261FA87000D9D8F5 /* TituloEveris */ = {
+			isa = PBXGroup;
+			children = (
+				BB885ED3261FA89B00D9D8F5 /* Controller */,
+				BB885ED2261FA89200D9D8F5 /* View */,
+				BB885ED1261FA88000D9D8F5 /* ViewModel */,
+				BB885EDC261FA91100D9D8F5 /* Protocol */,
+			);
+			path = TituloEveris;
+			sourceTree = "<group>";
+		};
+		BB885ED1261FA88000D9D8F5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BB885ED4261FA8C900D9D8F5 /* TituloModeloUI.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BB885ED2261FA89200D9D8F5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BB6E1213261CD63C00EC5C97 /* TituloEveris.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BB885ED3261FA89B00D9D8F5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BB6E1218261CD64C00EC5C97 /* TituloEveris.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BB885EDC261FA91100D9D8F5 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				BB885EDD261FA97400D9D8F5 /* TituloEverisProtocols.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -474,9 +519,11 @@
 			files = (
 				BB6E11C9261CA76000EC5C97 /* Mod02.xcdatamodeld in Sources */,
 				BB6E11C3261CA76000EC5C97 /* ViewController.swift in Sources */,
+				BB885EDE261FA97400D9D8F5 /* TituloEverisProtocols.swift in Sources */,
 				BB6E1201261CA83600EC5C97 /* ViewEveris.swift in Sources */,
 				BB6E1219261CD64C00EC5C97 /* TituloEveris.swift in Sources */,
 				BB6E11BF261CA76000EC5C97 /* AppDelegate.swift in Sources */,
+				BB885ED5261FA8C900D9D8F5 /* TituloModeloUI.swift in Sources */,
 				BB6E11C1261CA76000EC5C97 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

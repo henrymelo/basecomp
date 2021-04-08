@@ -60,21 +60,3 @@ extension UIView {
     }
     
 }
-
-extension ViewEveris {
-    func loadNib() -> ViewEveris {
-        let bundle = Bundle(for: type(of: self))
-        let nibName = type(of: self).description().components(separatedBy: ".").last!
-        let nib = UINib(nibName: nibName, bundle: bundle)
-        return nib.instantiate(withOwner: self, options: nil).first as! ViewEveris
-    }
-}
-
-extension TituloEveris {
-    func loadNib() -> TituloEveris {
-        let bundle = Bundle(for: type(of: self))
-        let nibName = type(of: self).description().components(separatedBy: ".").last!
-        let nib = UINib(nibName: nibName, bundle: bundle)
-        return nib.instantiate(withOwner: self, options: nil).first as! TituloEveris
-    }
-}

@@ -43,33 +43,29 @@ class ViewController: UIViewController {
     @IBOutlet weak var stack: UIStackView!
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         setupUI()
     }
 
     func setupUI() {
         //Component com XIB
-        let myView = ViewEveris().loadNib() // .fromNib()
+        let myView = ViewEveris.fromNib() // .fromNib()
         myView.backgroundColor = .cyan
-        //stack.addArrangedSubview(myView)
+        stack.addArrangedSubview(myView)
         
         //fromNib()
         let myTitulo1 = TituloEveris.fromNib() // .fromNib()
-        myTitulo1.setupUI(title: "titulo fromNib")
+        myTitulo1.setupUI(title: TituloEverisUI(description: "Novo Titulo"))
         stack.addArrangedSubview(myTitulo1)
 
-        //loadNib()
-        let myTitulo2 = TituloEveris(title: "aaaaadddd").loadNib()
-        myTitulo2.setupUI(title: "aaaa")
-        stack.addArrangedSubview(myTitulo2)
-
         //Component ViewCode puro
-        let myTitulo3 = TituloEveris(title: "bbbb").loadNib()
-        myTitulo3.backgroundColor = .cyan
-        myTitulo3.setupUI(title: "cccccc")
-        myTitulo3.addTitulo(titulo: "Everis novo Titulo", y: 80, cor: .yellow)
-        myTitulo3.addTitulo(titulo: "Everis sub Titulo", y: 150, cor: .novaCorViaExtension)
-        stack.addArrangedSubview(myTitulo3)
+        let myTitulo2 = TituloEveris.fromNib()
+        myTitulo2.backgroundColor = .cyan
+        myTitulo2.setupUI(title: "setupViewCode")
+        myTitulo2.addTitulo(titulo: "Everis novo Titulo", y: 80, cor: .yellow)
+        myTitulo2.addTitulo(titulo: "Everis sub Titulo", y: 150, cor: .novaCorViaExtension)
+        //stack.addArrangedSubview(myTitulo2)
         
         
        // stack.translatesAutoresizingMaskIntoConstraints = false
@@ -86,3 +82,12 @@ class ViewController: UIViewController {
 
 }
  
+extension UIViewController: TituloEverisDelegate {
+    func buttonAction() {
+        print("*******************************")
+        print("BOTÃO ACIONADO!!!")
+        print("*******************************")
+    }
+    
+    
+}

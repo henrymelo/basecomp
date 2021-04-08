@@ -14,7 +14,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P76-i3-e8L" userLabel="View" customClass="TituloEveris" customModule="Mod02">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P76-i3-e8L">
                     <rect key="frame" x="20" y="384" width="374" height="128"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Algum Titulo virá aqui" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1qh-xI-dan">
@@ -23,6 +23,15 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beh-KJ-pxL">
+                            <rect key="frame" x="241" y="83" width="81" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="botaoOuTituloAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="OdD-kt-4zA"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
@@ -42,7 +51,7 @@
                 <constraint firstItem="P76-i3-e8L" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="yHd-6y-MIe"/>
             </constraints>
             <connections>
-                <outlet property="titulo" destination="1qh-xI-dan" id="qPI-lb-sw9"/>
+                <outlet property="titulo" destination="1qh-xI-dan" id="SGV-E9-DSG"/>
             </connections>
             <point key="canvasLocation" x="111.59420289855073" y="56.919642857142854"/>
         </view>
@@ -50,6 +59,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
