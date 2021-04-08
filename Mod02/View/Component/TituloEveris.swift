@@ -86,6 +86,7 @@ public class TituloEveris: UIView {
     
     public func setupUI(title: String) {
         self.titulox = title
+        self.titulo?.text = "naum vai..."
     }
     
     @IBAction func botaoOuTituloAction(_ sender: UIButton) {

@@ -60,7 +60,7 @@ class ViewController: UIViewController {
 
         //loadNib()
         let myTitulo2 = TituloEveris(title: "aaaaadddd").loadNib()
-        myTitulo2.setupUI(title: "cccccc")
+        myTitulo2.setupUI(title: "aaaa")
         stack.addArrangedSubview(myTitulo2)
 
         //Component ViewCode puro

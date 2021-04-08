@@ -14,7 +14,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P76-i3-e8L" customClass="TituloEveris" customModule="Mod02">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P76-i3-e8L" userLabel="View" customClass="TituloEveris" customModule="Mod02">
                     <rect key="frame" x="20" y="384" width="374" height="128"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Algum Titulo virá aqui" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1qh-xI-dan">
@@ -32,9 +32,6 @@
                         <constraint firstAttribute="height" constant="128" id="iSy-6D-pqt"/>
                         <constraint firstAttribute="trailing" secondItem="1qh-xI-dan" secondAttribute="trailing" constant="52" id="mJJ-6S-CTZ"/>
                     </constraints>
-                    <connections>
-                        <outlet property="titulo" destination="1qh-xI-dan" id="hEu-eA-oT3"/>
-                    </connections>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
@@ -44,6 +41,9 @@
                 <constraint firstItem="P76-i3-e8L" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="xb1-3H-Ihl"/>
                 <constraint firstItem="P76-i3-e8L" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="yHd-6y-MIe"/>
             </constraints>
+            <connections>
+                <outlet property="titulo" destination="1qh-xI-dan" id="qPI-lb-sw9"/>
+            </connections>
             <point key="canvasLocation" x="111.59420289855073" y="56.919642857142854"/>
         </view>
     </objects>
