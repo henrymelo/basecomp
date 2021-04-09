@@ -1,0 +1,22 @@
+{
+  "name": "UIKitBecaiOS",
+  "version": "2.3.7",
+  "summary": "A short description of UIKitBecaiOS.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/henrymelo/UIKitBecaiOS",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "henrymelo": "henry.melo@yahoo.com"
+  },
+  "source": {
+    "git": "https://github.com/henrymelo/UIKitBecaiOS.git",
+    "tag": "2.3.7"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "UIKitBecaiOS/Classes/**/*"
+}

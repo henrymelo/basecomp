@@ -4,17 +4,29 @@ PODS:
     - Reusable/View (= 4.1.1)
   - Reusable/Storyboard (4.1.1)
   - Reusable/View (4.1.1)
+  - UIKitBecaiOS (2.3.7)
 
 DEPENDENCIES:
   - Reusable
+  - UIKitBecaiOS (from `https://github.com/henrymelo/UIKitBecaiOS.git`)
 
 SPEC REPOS:
   trunk:
     - Reusable
 
+EXTERNAL SOURCES:
+  UIKitBecaiOS:
+    :git: https://github.com/henrymelo/UIKitBecaiOS.git
+
+CHECKOUT OPTIONS:
+  UIKitBecaiOS:
+    :commit: 070fa75b9aeb6106c038b2ddd4d807389e7da820
+    :git: https://github.com/henrymelo/UIKitBecaiOS.git
+
 SPEC CHECKSUMS:
   Reusable: 53a9acf5c536f229b31b5865782414b508252ddb
+  UIKitBecaiOS: e0b8ac2840104bac3d5cdf3d224baa9949973094
 
-PODFILE CHECKSUM: b827b278e288b95da82d9367c94d5e3f2ffed680
+PODFILE CHECKSUM: 1ba6ac1bf4035866c0601d1f1fdd56877e2ab0a0
 
 COCOAPODS: 1.8.3

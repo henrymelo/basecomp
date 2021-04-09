@@ -1,0 +1,6 @@
+framework module UIKitBecaiOS {
+  umbrella header "UIKitBecaiOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

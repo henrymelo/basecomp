@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import UIKitBecaiOS
 
 enum Categoria: String {
     case Semana = "www.google.com.br"
@@ -56,7 +57,7 @@ class ViewController: UIViewController {
         
         //fromNib()
         let myTitulo1 = TituloEveris.fromNib() // .fromNib()
-        myTitulo1.setupUI(title: TituloEverisUI(description: "Novo Titulo", delegate: self))
+        myTitulo1.setupUI(title: TituloEverisUI(description: ButtonBecaiOS.TituloNormal, delegate: self))
         stack.addArrangedSubview(myTitulo1)
 
         //Component ViewCode puro

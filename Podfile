@@ -7,6 +7,7 @@ target 'Mod02' do
 
   # Pods for Mod02
   pod 'Reusable'
+  pod 'UIKitBecaiOS', :git => 'https://github.com/henrymelo/UIKitBecaiOS.git'
 
   target 'Mod02Tests' do
     inherit! :search_paths
