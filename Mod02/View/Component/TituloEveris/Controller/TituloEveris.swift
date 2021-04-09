@@ -11,7 +11,7 @@ import UIKit
 public class TituloEveris: UIView {
     public var view: UIView!
     
-    weak var delegage: TituloEverisDelegate?
+    var delegage: TituloEverisDelegate?
     var buttonAction: (() -> Void)?
 
 
@@ -85,6 +85,7 @@ public class TituloEveris: UIView {
     
     public func setupUI(title: TituloEverisUI) {
         self.titulox = title.description
+        self.delegage = title.delegate
     }
     
     @IBAction func botaoOuTituloAction(_ sender: UIButton) {

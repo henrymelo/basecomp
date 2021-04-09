@@ -5,6 +5,6 @@
 //  Created by Henrique Melo on 08/04/21.
 //
 
-protocol TituloEverisDelegate: class {
+public protocol TituloEverisDelegate: class {
     func buttonAction()
 }

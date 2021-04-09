@@ -10,4 +10,5 @@ import UIKit
 public struct TituloEverisUI {
     var description: String = ""
     var color: UIColor?
+    var delegate: TituloEverisDelegate?
 }

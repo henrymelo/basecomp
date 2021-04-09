@@ -56,7 +56,7 @@ class ViewController: UIViewController {
         
         //fromNib()
         let myTitulo1 = TituloEveris.fromNib() // .fromNib()
-        myTitulo1.setupUI(title: TituloEverisUI(description: "Novo Titulo"))
+        myTitulo1.setupUI(title: TituloEverisUI(description: "Novo Titulo", delegate: self))
         stack.addArrangedSubview(myTitulo1)
 
         //Component ViewCode puro
@@ -83,7 +83,7 @@ class ViewController: UIViewController {
 }
  
 extension UIViewController: TituloEverisDelegate {
-    func buttonAction() {
+    public func buttonAction() {
         print("*******************************")
         print("BOTÃO ACIONADO!!!")
         print("*******************************")
