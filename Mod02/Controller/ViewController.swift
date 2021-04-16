@@ -43,12 +43,16 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var stack: UIStackView!
     
-    override func viewDidLoad() {
-        
-        super.viewDidLoad()
+    /**
+     * So renderiza corretamente o Layout  chamando no  viewDidAppear
+     * ou em um  IBAction
+     */
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         setupUI()
+        showDetailsAction()
     }
-
+    
     func setupUI() {
         //Component com XIB
         let myView = ViewEveris.fromNib() // .fromNib()
@@ -68,7 +72,6 @@ class ViewController: UIViewController {
         myTitulo2.addTitulo(titulo: "Everis sub Titulo", y: 150, cor: .novaCorViaExtension)
         //stack.addArrangedSubview(myTitulo2)
         
-        
        // stack.translatesAutoresizingMaskIntoConstraints = false
 
         apiFilmes(categoria: .Semana, cor: .corEveris)
@@ -81,14 +84,26 @@ class ViewController: UIViewController {
         print("*******************************")
     }
 
+    func showDetailsAction() {
+        let vc = ViewDetailsVC.fromSB()
+        vc.setupUI(delegate: self)
+        self.present(vc, animated: true, completion: nil)
+    }
 }
- 
-extension UIViewController: TituloEverisDelegate {
+
+extension ViewController: TituloEverisDelegate {
     public func buttonAction() {
         print("*******************************")
         print("BOTÃO ACIONADO!!!")
         print("*******************************")
+        showDetailsAction()
     }
-    
-    
+}
+
+extension ViewController: DetailViewDelegate {
+    func viewDetailAction() {
+        print("*********************************")
+        print(" viewDetailAction ")
+        print("*********************************")
+    }
 }
