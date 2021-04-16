@@ -8,7 +8,7 @@
 import UIKit
 
 public struct DetailView {
-    static let buttonTitle = "Detalhar"
+    static let buttonTitle = "Alguma ação"
 }
 
 public protocol DetailViewDelegate: class {
