@@ -20,7 +20,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   UIKitBecaiOS:
-    :commit: 96c73ff9e6088e524d6cff215c7892d527cb1f70
+    :commit: 2284fdd3432654333afb144faaa20331f454d093
     :git: https://github.com/henrymelo/UIKitBecaiOS.git
 
 SPEC CHECKSUMS:
