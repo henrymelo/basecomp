@@ -8,12 +8,36 @@
 import Foundation
 import UIKit
 
+public struct ViewDetailsUIVC {
+    public var name: String
+    public var sigla: String
+    public var price: Double
+    public var idIcon: String
+    public var delegate: DetailViewDelegate
+    
+    public init(name: String, sigla: String, price: Double, idIcon: String,
+                delegate: DetailViewDelegate ) {
+        self.name = name
+        self.sigla = sigla
+        self.price = price
+        self.idIcon = idIcon
+        self.delegate = delegate
+    }
+}
+
 public class ViewDetailsVC: UIViewController {
 
     @IBOutlet weak var stackDetails: UIStackView!
     
     public override func viewDidLoad() {
         super.viewDidLoad()
+    }
+        
+    public func setupUI(viewDetails: ViewDetailsUIVC)  {
+        let head = DetailViewUI.fromNib()
+        head.setupUI(delegate: viewDetails.delegate)
+        head.backgroundColor = #colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1)
+        stackDetails.addArrangedSubview(head)
     }
     
     public func setupUI(delegate: DetailViewDelegate)  {
