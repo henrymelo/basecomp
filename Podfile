@@ -19,6 +19,9 @@ target 'SuperApp' do
 
   target 'SuperAppUITests' do
     # Pods for testing
+    pod 'Nimble'
+    pod 'Quick'
+    pod 'Nimble-Snapshots'
   end
 
 end

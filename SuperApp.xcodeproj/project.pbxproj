@@ -51,7 +51,6 @@
 		353A09D61859F38DED284569 /* Pods-SuperAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperAppTests.release.xcconfig"; path = "Target Support Files/Pods-SuperAppTests/Pods-SuperAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		5118EC7AB3705255DC4F7C7D /* Pods_SuperApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		943D36E64C9D963F693AC60E /* Pods_SuperApp_SuperAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperApp_SuperAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB6E11BB261CA76000EC5C97 /* SuperApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = SuperApp.app; path = "/Users/hrmelo/Desktop/component/basecomp/build/Debug-iphoneos/SuperApp.app"; sourceTree = "<absolute>"; };
 		BB6E11BE261CA76000EC5C97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB6E11C0261CA76000EC5C97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BB6E11C2261CA76000EC5C97 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,10 +59,8 @@
 		BB6E11CA261CA76600EC5C97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB6E11CD261CA76600EC5C97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB6E11CF261CA76600EC5C97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BB6E11D4261CA76600EC5C97 /* SuperAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = SuperAppTests.xctest; path = "/Users/hrmelo/Desktop/component/basecomp/build/Debug-iphoneos/SuperAppTests.xctest"; sourceTree = "<absolute>"; };
 		BB6E11D8261CA76600EC5C97 /* SuperAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperAppTests.swift; sourceTree = "<group>"; };
 		BB6E11DA261CA76600EC5C97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BB6E11DF261CA76600EC5C97 /* SuperAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = SuperAppUITests.xctest; path = "/Users/hrmelo/Desktop/component/basecomp/build/Debug-iphoneos/SuperAppUITests.xctest"; sourceTree = "<absolute>"; };
 		BB6E11E3261CA76600EC5C97 /* SuperAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperAppUITests.swift; sourceTree = "<group>"; };
 		BB6E11E5261CA76600EC5C97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB6E11FB261CA82400EC5C97 /* ViewEveris.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewEveris.xib; sourceTree = "<group>"; };
@@ -72,6 +69,9 @@
 		BB6E1218261CD64C00EC5C97 /* TituloEveris.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TituloEveris.swift; sourceTree = "<group>"; };
 		BB885ED4261FA8C900D9D8F5 /* TituloModeloUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TituloModeloUI.swift; sourceTree = "<group>"; };
 		BB885EDD261FA97400D9D8F5 /* TituloEverisProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TituloEverisProtocols.swift; sourceTree = "<group>"; };
+		BB9F45F32636FECE0083C72D /* SuperApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB9F45F42636FECE0083C72D /* SuperAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB9F45F52636FECE0083C72D /* SuperAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA85F189176DFE6E09281F2F /* Pods_SuperAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD5996085EFB50EE34C99768 /* Pods-SuperApp-SuperAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperApp-SuperAppUITests.release.xcconfig"; path = "Target Support Files/Pods-SuperApp-SuperAppUITests/Pods-SuperApp-SuperAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D5503E5E96656467F4D2FB2E /* Pods-SuperApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperApp.debug.xcconfig"; path = "Target Support Files/Pods-SuperApp/Pods-SuperApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -136,6 +136,9 @@
 				BB6E11E2261CA76600EC5C97 /* SuperAppUITests */,
 				0339844C38168304E9AD5C5D /* Pods */,
 				A52BE7F97EB85492E8418E0E /* Frameworks */,
+				BB9F45F32636FECE0083C72D /* SuperApp.app */,
+				BB9F45F42636FECE0083C72D /* SuperAppTests.xctest */,
+				BB9F45F52636FECE0083C72D /* SuperAppUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -277,7 +280,7 @@
 			);
 			name = SuperApp;
 			productName = Mod02;
-			productReference = BB6E11BB261CA76000EC5C97 /* SuperApp.app */;
+			productReference = BB9F45F32636FECE0083C72D /* SuperApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 		BB6E11D3261CA76600EC5C97 /* SuperAppTests */ = {
@@ -297,7 +300,7 @@
 			);
 			name = SuperAppTests;
 			productName = Mod02Tests;
-			productReference = BB6E11D4261CA76600EC5C97 /* SuperAppTests.xctest */;
+			productReference = BB9F45F42636FECE0083C72D /* SuperAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		BB6E11DE261CA76600EC5C97 /* SuperAppUITests */ = {
@@ -317,7 +320,7 @@
 			);
 			name = SuperAppUITests;
 			productName = Mod02UITests;
-			productReference = BB6E11DF261CA76600EC5C97 /* SuperAppUITests.xctest */;
+			productReference = BB9F45F52636FECE0083C72D /* SuperAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
