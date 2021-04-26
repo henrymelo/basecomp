@@ -23,6 +23,7 @@
 		BB6E1219261CD64C00EC5C97 /* TituloEveris.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6E1218261CD64C00EC5C97 /* TituloEveris.swift */; };
 		BB885ED5261FA8C900D9D8F5 /* TituloModeloUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB885ED4261FA8C900D9D8F5 /* TituloModeloUI.swift */; };
 		BB885EDE261FA97400D9D8F5 /* TituloEverisProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB885EDD261FA97400D9D8F5 /* TituloEverisProtocols.swift */; };
+		BB9F4655263705C10083C72D /* SuperAppSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9F4654263705C10083C72D /* SuperAppSpec.swift */; };
 		CEBCADEC0D4FD62B4196649A /* Pods_SuperAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD7DDC0CB54627C869641591 /* Pods_SuperAppTests.framework */; };
 		DC43CD5FDFD26C43ED2CDBF7 /* Pods_SuperApp_SuperAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4194C13E1B6F495F9AC265 /* Pods_SuperApp_SuperAppUITests.framework */; };
 /* End PBXBuildFile section */
@@ -74,6 +75,7 @@
 		BB9F45F32636FECE0083C72D /* SuperApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB9F45F42636FECE0083C72D /* SuperAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB9F45F52636FECE0083C72D /* SuperAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB9F4654263705C10083C72D /* SuperAppSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperAppSpec.swift; sourceTree = "<group>"; };
 		DD7DDC0CB54627C869641591 /* Pods_SuperAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -152,6 +154,7 @@
 			children = (
 				BB6E11D8261CA76600EC5C97 /* SuperAppTests.swift */,
 				BB6E11DA261CA76600EC5C97 /* Info.plist */,
+				BB9F4654263705C10083C72D /* SuperAppSpec.swift */,
 			);
 			path = SuperAppTests;
 			sourceTree = "<group>";
@@ -534,6 +537,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB9F4655263705C10083C72D /* SuperAppSpec.swift in Sources */,
 				BB6E11D9261CA76600EC5C97 /* SuperAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
