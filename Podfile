@@ -12,6 +12,9 @@ target 'SuperApp' do
   target 'SuperAppTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'Nimble'
+    pod 'Quick'
+    pod 'Nimble-Snapshots'
   end
 
   target 'SuperAppUITests' do
